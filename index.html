@@ -15,7 +15,6 @@
     </style>
 
     <!-- MAPA DE IMPORTACIÓN CORRECTO Y SIN CONFLICTOS -->
-    <!-- Aquí le decimos al navegador dónde encontrar cada librería, usando UNA SOLA versión estable. -->
     <script type="importmap">
 {
   "imports": {
@@ -29,15 +28,13 @@
 </script>
 
     <!-- TRADUCTOR (BABEL) -->
-    <!-- Este script traduce el código TSX/JSX a JavaScript que el navegador entiende. -->
     <script src="https://unpkg.com/@babel/standalone@7.24.9/babel.min.js"></script>
 </head>
 <body>
     <div id="root"></div>
 
     <!-- SCRIPT DE LA APLICACIÓN -->
-    <!-- Esta línea le dice a Babel que traduzca tu archivo principal. -->
     <script type="text/babel" data-type="module" data-presets="react,typescript" src="./index.tsx"></script>
 </body>
 </html>
-   
+
