@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -13,7 +14,7 @@
         ::-webkit-scrollbar-thumb:hover { background: #6b7280; }
     </style>
 
-    <!-- MAPA DE IMPORTACIÓN CORRECTO Y SIMPLIFICADO -->
+    <!-- MAPA DE IMPORTACIÓN CORRECTO Y SIN CONFLICTOS -->
     <!-- Aquí le decimos al navegador dónde encontrar cada librería, usando UNA SOLA versión estable. -->
     <script type="importmap">
 {
@@ -28,6 +29,7 @@
 </script>
 
     <!-- TRADUCTOR (BABEL) -->
+    <!-- Este script traduce el código TSX/JSX a JavaScript que el navegador entiende. -->
     <script src="https://unpkg.com/@babel/standalone@7.24.9/babel.min.js"></script>
 </head>
 <body>
@@ -38,3 +40,4 @@
     <script type="text/babel" data-type="module" data-presets="react,typescript" src="./index.tsx"></script>
 </body>
 </html>
+   
