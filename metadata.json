@@ -1,0 +1,6 @@
+{
+  "name": "ERIKA IA-App Fast Document",
+  "description": "Simulador de generación de documentos que a partir de un DNI con datos falsos genere un Poder Especial, y que de una demanda laboral muy simple tambien con datos falsos genere una contestación de demanda.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
