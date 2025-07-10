@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -37,9 +38,12 @@
   }
 }
 </script>
+    <!-- ESTE ES EL TRADUCTOR QUE FALTABA -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
   <body class="bg-gray-900">
     <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
+    <!-- SE CAMBIA EL TIPO DE SCRIPT PARA QUE EL TRADUCTOR LO ENCUENTRE -->
+    <script type="text/babel" data-type="module" src="./index.tsx"></script>
   </body>
 </html>
