@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
   <head>
@@ -37,12 +38,12 @@
   }
 }
 </script>
-    <!-- ESTE ES EL TRADUCTOR QUE FALTABA -->
+    <!-- ESTE ES EL TRADUCTOR -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
   <body class="bg-gray-900">
     <div id="root"></div>
-    <!-- SE CAMBIA EL TIPO DE SCRIPT PARA QUE EL TRADUCTOR LO ENCUENTRE -->
-    <script type="text/babel" data-type="module" src="./index.tsx"></script>
+    <!-- ESTA ES LA LÍNEA CRÍTICA: Se añaden los "diccionarios" para React y TypeScript -->
+    <script type="text/babel" data-type="module" data-presets="react,typescript" src="./index.tsx"></script>
   </body>
 </html>
