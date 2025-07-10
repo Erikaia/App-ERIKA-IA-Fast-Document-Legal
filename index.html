@@ -7,20 +7,15 @@
     <title>ERIKA IA-App Fast Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Estilo básico para que el fondo se vea bien mientras carga */
-        body { background-color: #111827; } /* Corresponde a bg-gray-900 */
-        /* Estilos para la barra de desplazamiento */
+        body { background-color: #111827; }
         ::-webkit-scrollbar { width: 8px; height: 8px; }
         ::-webkit-scrollbar-track { background: #1f2937; }
         ::-webkit-scrollbar-thumb { background: #4b5563; border-radius: 4px; }
         ::-webkit-scrollbar-thumb:hover { background: #6b7280; }
     </style>
 
-    <!--
-      PASO 1: IMPORT MAP
-      Le dice al navegador exactamente dónde encontrar cada librería.
-      Se usa React v18, la versión más estable, para máxima compatibilidad.
-    -->
+    <!-- MAPA DE IMPORTACIÓN CORRECTO Y SIMPLIFICADO -->
+    <!-- Aquí le decimos al navegador dónde encontrar cada librería, usando UNA SOLA versión estable. -->
     <script type="importmap">
 {
   "imports": {
@@ -33,20 +28,14 @@
 }
 </script>
 
-    <!--
-      PASO 2: EL TRADUCTOR (BABEL)
-      Necesario para que el navegador entienda el código especial (TSX/JSX) de React.
-    -->
+    <!-- TRADUCTOR (BABEL) -->
     <script src="https://unpkg.com/@babel/standalone@7.24.9/babel.min.js"></script>
 </head>
 <body>
     <div id="root"></div>
 
-    <!--
-      PASO 3: EL SCRIPT DE TU APLICACIÓN
-      Esta línea le dice a Babel que encuentre tu archivo `index.tsx`, lo traduzca
-      usando los "diccionarios" de React y TypeScript, y luego lo ejecute.
-    -->
+    <!-- SCRIPT DE LA APLICACIÓN -->
+    <!-- Esta línea le dice a Babel que traduzca tu archivo principal. -->
     <script type="text/babel" data-type="module" data-presets="react,typescript" src="./index.tsx"></script>
 </body>
 </html>
